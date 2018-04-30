@@ -41,5 +41,18 @@ The last peice of analysis I did was to look at registration changes in counties
 
 [![2017_clinton]()]()
 
+There are two major take aways from these two graphs. 
+  1. The difference in party registared voters throughout the year 2017. In counties that Donald Trump won you see a clear increase in Rupublican registared voters throughout the year while Democratic registared voters flucuate while mostly decreasing. In counties won by Hillary Clinton this same pattern does not happen. Boths parties voter registations tends to flucuate togeather throught the year. Taking this from a state point of view if a county voted for the losing canadiant (Hillary Clinton won Colorado), you will see a increase in the loseing parties voter registation numbers. You will find a simlar situation happen in 2015 compaired to the 2014 gubitotial race. 
+  
+  2. Another important thing to note is that the rate of increase of unifillated voter registrations is higher in counties won by Donald Trump than Hillary Cilinton. In counties won by Donald Trump unifillieated voters increased by an average of .008125% per month while counties won by Hillary Clinton only increased by .00675% per month. 
+  
+To answer the question posed in the introduction of this readme. Political momentum from winning an election does not carry over to the following year in terms of new voter registrations. When viewed at a county level it is the oppisite. If a county votes a different way than the states result the county will see an incease in voters registrations for the party that lost the state election. This effect does not only cover a political parties registarted voters but unifillated voters as well. 
+
+
+## Forecasting
+
+This last part of this project was to forecast out voter registration through 2018. This was all done in the notebook called [Grand Total Time Series]() and [Registration Type Time Series](). My first step in this process was to use time series techniques to predict on its self. The goal was to overfit these models as much as possible to generate dependate variables that I know will help out my model when it comes to forcasting. I came up with two dependant variables that overfit my models. THey were drop months, when counties remove people from voter registries, and election buzz months, few months before even year elections when get out to vote campaigns are in full gear. 
+
+After I had these it was time to pick a forecasting model. I chose to use a seasonal ARIMA model. ARIMA stands for autoregressive integrated moving average. 
 
 
