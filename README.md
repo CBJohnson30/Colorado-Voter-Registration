@@ -53,6 +53,7 @@ To answer the question posed in the introduction of this readme. Political momen
 
 This last part of this project was to forecast out voter registration through 2018. This was all done in the notebook called [Grand Total Time Series]() and [Registration Type Time Series](). My first step in this process was to use time series techniques to predict on its self. The goal was to overfit these models as much as possible to generate dependate variables that I know will help out my model when it comes to forcasting. I came up with two dependant variables that overfit my models. THey were drop months, when counties remove people from voter registries, and election buzz months, few months before even year elections when get out to vote campaigns are in full gear. 
 
-After I had these it was time to pick a forecasting model. I chose to use a seasonal ARIMA model. ARIMA stands for autoregressive integrated moving average. 
+After I had these it was time to pick a forecasting model. I chose to use a seasonal ARIMA model. ARIMA stands for autoregressive integrated moving average. The seasonal part is very important because of the pattern at appears in the data, this is what is known as a season. For this data the season is  2 years or 24 months. This model takens into account not only what happenes a few time perioeds before the forcasting date but the season before as well. Below is the forcasting graph for regerstrations types and forcasting for total regerstared voters can be viewed [here](). 
 
+[![reg_type_forecast]()]()
 
