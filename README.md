@@ -1,6 +1,6 @@
 # Colorado Voter Registration
 
-In this Repo I will be going through my Capstone Project for the General Assumbly Immersive I took. This project was about Colorado Voter Registrtion numbers in the years 2013 to 2017 and how they change over time. One of the main questions I had going into this project was to see if elections results could tell you anything about the following years registration numbers. Does momentem of winning the election carry over to an increase of more voter registration for the winning party? I will be breaking this down to a county level to have smaller sample sizes and more samples to look at.  I will also be forecasting out voter registration numbers for each county as well. 
+In this repo I will be going through my Capstone Project for the General Assumbly Immersive I took. This project was about Colorado Voter Registrtion numbers in the years 2013 to 2017 and how they change over time. One of the main questions I had going into this project was to see if elections results could tell you anything about the following years registration numbers. Does momentem of winning the election carry over to an increase of more voter registration for the winning party? I will be breaking this down to a county level to have smaller sample sizes and more samples to look at.  I will also be forecasting out voter registration numbers for each county as well. 
 
 IMPORTANT! - You may click on any graph to go to my Tableau Public profile so every grapgh will be interactive. You may also view all other visuals I made that were not included in this repo.  
 
@@ -56,4 +56,8 @@ This last part of this project was to forecast out voter registration through 20
 After I had these it was time to pick a forecasting model. I chose to use a seasonal ARIMA model. ARIMA stands for autoregressive integrated moving average. The seasonal part is very important because of the pattern at appears in the data, this is what is known as a season. For this data the season is  2 years or 24 months. This model takens into account not only what happenes a few time perioeds before the forcasting date but the season before as well. Below is the forcasting graph for regerstrations types and forcasting for total regerstared voters can be viewed [here](). 
 
 [![reg_type_forecast]()]()
+
+To the eye these forecast may look resonable but I do not trust these forecasts as much as I would like. There are a few reasons for this but they all come back to is that I do not have enough data for my forecast to be correct. With the data I have available to me this is a problem I can not solve either. The defination of an inactive and active voter changed in 2013 as mentioned above does not allow me to go back any farther than I already do.
+
+My model can only look back one season if I enclude any autoregressive and moving average components. This is a problem because massive influx of voters in 2016 due to the conserversional presidental election. Looking at Novembers in even years for the grand total of registared voters to goes: 2012 - 3.65 million, 2014 - 3.66 million and 2016 - 3.87 million. My forecast predicts november of 2018 to have 4.02 million voters. I do not think the pouplation of Colorado, roughly 5.6 million be able to sustain this growth in voter registrations. 
 
